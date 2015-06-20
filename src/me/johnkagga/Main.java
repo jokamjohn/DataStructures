@@ -1,5 +1,6 @@
 package me.johnkagga;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
@@ -24,11 +25,22 @@ public class Main {
         * + add the spaces
         * http://www.ocpsoft.org/tutorials/regular-expressions/java-visual-regex-tester/
         * removes the other characters ? and others
+        * http://docs.oracle.com/javase/tutorial/essential/regex/
          */
         //loop through the words
         for (String word : treet.getWords()){
             System.out.println(word);
         }
+
+        String[] fruits = {"mangoes","oranges"};
+        String fruit = fruits[0];
+        System.out.print(fruit);
+        //adding a fruit to fruits array
+        fruits = Arrays.copyOf(fruits,3);
+        //add jack fruits to the array
+        fruits[2] = "jackfruits";
+        String fruit2 = fruits[2];
+        System.out.printf(fruit2);
 
 
     }
