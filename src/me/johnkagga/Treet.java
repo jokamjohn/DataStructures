@@ -8,11 +8,23 @@ import java.util.Date;
 public class Treet {
     private String mAuthor;
     private String mDescription;
-    private Date mDate;
+    private Date mCreationDate;
 
-    public Treet(String author, String description, Date date) {
+    public Treet(String author, String description, Date creationDate) {
         mAuthor = author;
         mDescription = description;
-        mDate = date;
+        mCreationDate = creationDate;
+    }
+
+    public String getAuthor() {
+        return mAuthor;
+    }
+
+    public String getDescription() {
+        return mDescription;
+    }
+
+    public Date getCreationDate() {
+        return mCreationDate;
     }
 }
