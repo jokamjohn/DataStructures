@@ -15,6 +15,14 @@ public class Treet {
         mDescription = description;
         mCreationDate = creationDate;
     }
+    /*
+    toString method returns a string of the object
+     */
+
+    @Override
+    public String toString() {
+        return "Treet: \"" + mDescription + "\" -@" + mAuthor;
+    }
 
     public String getAuthor() {
         return mAuthor;
