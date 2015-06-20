@@ -24,6 +24,11 @@ public class Treet {
         return "Treet: \"" + mDescription + "\" -@" + mAuthor;
     }
 
+    public String[] getWords(){
+        // add \\ escape character to mean \
+        return mDescription.split("[^\\w#,.`]+");
+    }
+
     public String getAuthor() {
         return mAuthor;
     }
@@ -35,4 +40,5 @@ public class Treet {
     public Date getCreationDate() {
         return mCreationDate;
     }
+
 }
