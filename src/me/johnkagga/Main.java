@@ -39,8 +39,15 @@ public class Main {
         fruits = Arrays.copyOf(fruits,3);
         //add jack fruits to the array
         fruits[2] = "jackfruits";
+        //check out the Arrays class
         String fruit2 = fruits[2];
         System.out.printf(fruit2);
+        //sort strings in alphabetical order
+        Arrays.sort(fruits);
+        for (String word : fruits){
+            System.out.println(word);
+
+        }
 
 
     }
